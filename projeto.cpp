@@ -2,6 +2,28 @@
 #include <string.h>
 #include <ctype.h>
 
+typedef struct clientes{
+    char nome[30];
+    int cpf;
+    int telefone;
+    int statusRegistro;
+    char email[30];
+}Clientes;
+
+void cadastarClientes(Clientes* vet){
+    int i;
+    printf("Informe o nome: \n");
+    fgets(vet[i].nome, 30, stdin);
+    printf("Informe o cpf: \n"); 
+    scanf("%d", &vet[i].cpf);
+    printf("Informe o numero de telefone: \n"); 
+    scanf("%d", &vet[i].telefone);
+    printf("Informe o status de registro: \n");
+    scanf("%d", &vet[i].statusRegistro);
+    printf("Informe o email: \n");
+    fgets(vet[i].email,30,stdin);
+}
+
 void criarArquivo(){
     
 }
