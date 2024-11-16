@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
+////////////////////////////////teste
 typedef struct clientes{
     char nome[30];
     int cpf;
